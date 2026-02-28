@@ -1,0 +1,143 @@
+/* RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* BODY */
+        body {
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e6c7ff, #f3dcff, #ffd6ff);
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            color: black;
+            font-size: 38px;
+            font-weight: 600;
+            padding: 25px 0;
+        }
+
+        /* DASHBOARD LAYOUT */
+        .dashboard {
+            height: calc(100vh - 100px);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 80px;
+        }
+
+        /* LEFT CARD */
+        .dashboard-card {
+            width: 420px;
+    
+            border-radius: 22px;
+            padding: 30px 28px;
+            background: rgba(255, 255, 255, 0.6);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* CARD HEADER */
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .card-header h2 {
+            font-size: 20px;
+            font-weight: 600;
+            color: #000;
+        }
+
+        /* SECTION BUTTON */
+        .section-btn {
+            padding: 6px 16px;
+            border: none;
+            border-radius: 20px;
+            background: #f2c8ff;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        /* ADVISOR BOX */
+        .advisor-box {
+            background: #f8e6ff;
+            border-radius: 16px;
+            padding: 18px;
+            margin-bottom: 25px;
+        }
+
+        .advisor-box h4 {
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .advisor-box p {
+            font-size: 14px;
+            margin-bottom: 6px;
+            color: #333;
+        }
+
+        .advisor-box i {
+            margin-right: 8px;
+            color: #7a2cbf;
+        }
+
+        /* ACTION BUTTONS */
+        .action-buttons a {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: #f2c8ff;
+            color: #000;
+            padding: 12px;
+            margin-bottom: 12px;
+            border-radius: 12px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .action-buttons a:hover {
+            background: #e5a7ff;
+            transform: translateY(-2px);
+        }
+
+        /* RIGHT IMAGE */
+        .image-box img {
+            width: 500px;
+            max-width: 100%;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 900px) {
+            header {
+                font-size: 26px;
+            }
+
+            .dashboard {
+                flex-direction: column;
+                justify-content: center;
+                gap: 40px;
+                padding: 20px;
+                height: auto;
+            }
+
+            .dashboard-card {
+                width: 100%;
+                max-width: 420px;
+            }
+
+            .image-box img {
+                width: 320px;
+            }
+        }

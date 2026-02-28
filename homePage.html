@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SMTEC — St. Mother Theresa Engineering College</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<style>
+    /* RESET */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    /* BODY */
+    body {
+        min-height: 100vh;
+        /* background:linear-gradient(135deg, #e6c7ff, #f3dcff, #ffd6ff);
+        color: #333; */
+         background: linear-gradient(135deg, #d5abf7, #dbbcec, #de8ede);
+            
+        color: #2e2e2e;
+        /* color: #c6a75e; */
+    }
+
+    /* CONTAINER */
+    .container {
+        width: 90%;
+        max-width: 1100px;
+        margin: auto;
+    }
+
+    /* HEADER */
+    header {
+        background: rgba(203, 103, 199, 0.674);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 14px 0;
+    }
+
+    .header-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* LOGO */
+    .logo-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .logo-box img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: #ca93e2;;
+    }
+
+    .logo-text h1 {
+        font-size: 20px;
+        color: #330e43;
+    }
+
+    .logo-text span {
+        font-size: 12px;
+        /* color: #f1f1f1; */
+        color: #330e43;
+    }
+
+    /* NAV */
+    .nav-buttons {
+        display: flex;
+        gap: 18px;
+    }
+
+    .nav-btn {
+        text-decoration: none;
+        /* color: #fff; */
+        color: #330e43;
+        font-size: 14px;
+        padding: 6px 14px;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+    .nav-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+
+/* //hamburger
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    width: 25px;
+    height: 3px;
+    background: #330e43;
+    transition: 0.3s;
+} */
+
+
+
+
+
+
+
+    /* HERO */
+    #hero {
+        padding: 80px 20px;
+        text-align: center;
+        color: #4b2a64;
+    }
+
+    #hero h2 {
+        font-size: 32px;
+        margin-bottom: 12px;
+    }
+
+    /* VISION & MISSION */
+    .vm-container {
+        display: flex;
+        gap: 25px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 40px 20px;
+    }
+
+    .vm-box {
+        width: 420px;
+        background: rgba(255, 255, 255, 0.856);
+        /* background: rgba(255, 255, 255, 0.95); */
+        border-radius: 20px;
+        padding: 25px;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    }
+    .vm-container :hover {
+        transform: translateY(-2px);
+    }
+
+    .vm-box h2 {
+        margin-bottom: 10px;
+        color: #6a5cff;
+    }
+
+    /* DEPARTMENTS */
+    .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+        gap: 20px;
+    }
+
+    .card {
+        background: rgba(255, 255, 255, 0.853);
+        /* background: rgba(255, 255, 255, 0.95); */
+        border-radius: 18px;
+        padding: 18px;
+        text-decoration: none;
+        color: #333;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .card:hover {
+        transform: translateY(-6px);
+    }
+
+    /* ABOUT */
+    .about {
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    /* FOOTER */
+    footer {
+        background: rgba(0, 0, 0, 0.35);
+        color: #fff;
+        padding: 40px 0 20px;
+    }
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .social-links a {
+        color: #fff;
+        font-size: 18px;
+        margin-right: 14px;
+        transition: 0.3s;
+    }
+
+    .social-links a:hover {
+        color: #ffb3e6;
+    }
+
+    footer p {
+        text-align: center;
+        font-size: 13px;
+        margin-top: 20px;
+    }
+</style>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="container header-flex">
+
+            <!-- LOGO + NAME -->
+            <div class="logo-box">
+                <img src="pic1.png">
+                <div class="logo-text">
+                    <h1>SMTEC</h1>
+                    <span>St. Mother Theresa Engineering College</span>
+                </div>
+            </div>
+
+            
+
+            <!-- NAV -->
+            <nav class="nav-buttons">
+                <a href="#" class="nav-btn">Login</a>
+                <a href="#departments" class="nav-btn">Departments</a>
+                <a href="mainAbout.html" class="nav-btn">About Us</a>
+                <a href="#contact" class="nav-btn">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero">
+        <div class="container">
+            <h2>Welcome to SMTEC</h2>
+            <p>Imparting professional technical education with excellence and integrity.</p>
+        </div>
+    </section>
+
+    <!-- VISION & MISSION -->
+    <div class="vm-container">
+        <div class="vm-box">
+
+            <center>
+                <h2>Vision</h2>
+            </center>
+            <p>
+                To become a center of excellence in engineering education by producing
+                technically competent and socially responsible engineers.
+            </p>
+        </div>
+
+        <div class="vm-box">
+            <center>
+                <h2>Mission</h2>
+            </center>
+            <p>
+                To provide quality education, promote innovation and research,
+                and develop leadership skills to meet industry and societal needs.
+            </p>
+        </div>
+    </div>
+
+    <!-- DEPARTMENTS -->
+    <section id="departments" class="container">
+        <center>
+            <h2 class="center">Departments</h2>
+        </center>
+        <br>
+        <br>
+
+        <div class="cards">
+            <a href="cse-department.html" class="card">Computer Science & Engineering</a>
+            <a href="ece.html" class="card">Electronics & Communication Engineering</a>
+            <a href="eee.html" class="card">Electrical & Electronics Engineering</a>
+            <a href="mech.html" class="card">Mechanical Engineering</a>
+            <a href="ai.html" class="card">Artificial Intelligence & Data Science</a>
+        </div>
+    </section>
+    <br>
+    <hr>
+
+    <!-- ABOUT -->
+    <section id="about" class="container about">
+        <h2>About the College</h2>
+        <br>
+        <br>
+        <p>
+            Campus life at SMTEC emphasizes discipline, respect, and professionalism.
+            The institution focuses on innovation, ethical values, and academic excellence.
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container footer-content">
+            <div>
+                <h3>Contact Information</h3>
+                <p>Vagaikulam, Thoothukudi – Tamil Nadu, India</p>
+                <p>Email: principal@mtec.ac.in</p>
+                <p>Phone: +91 73737 51368</p>
+            </div>
+
+            <div class="social-links">
+                <h3>Follow Us</h3>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <br>
+        <hr>
+
+        <p class="copyright">
+            © 2026 St. Mother Theresa Engineering College. All Rights Reserved.
+        </p>
+    </footer>
+
+</body>
+
+</html>

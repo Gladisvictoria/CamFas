@@ -1,0 +1,90 @@
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+     /* background: linear-gradient(-45deg, #f2a4f6, #dbbcec, #de8ede, #fda2ff); */
+      /* background: linear-gradient(135deg, #d5abf7, #dbbcec, #de8ede); */
+        background: linear-gradient(135deg, #e6c7ff, #f3dcff, #ffd6ff);     
+}
+
+header {  
+     
+    background-image: url("cse-bg-img/header.jpg");
+     color: #330e43;
+     background: rgba(203, 103, 199, 0.674);
+    padding-top: 40px;
+    padding-bottom: 30px;
+   
+    text-align: center;
+    padding: 37px;
+    font-size: 15px;
+    font-weight: bold;
+   
+}
+
+
+
+.container {
+    width: 150px;
+    height: 150px ;
+    margin: 30px auto;
+    border: 2px solid #f4f4f4;
+    padding: 20px;
+    background:#f4f4f4;
+    border-radius: 10px;
+}
+
+/* Image box like your drawing */
+.container img {
+    display: flexbox;
+    width: 150px;
+    height: 150px;
+    border: 2px solid black;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+}
+
+/* Name styling */
+h2 {
+    text-align: center;
+    margin-top: -10px;
+    margin-bottom: 30px;
+}
+
+/* Info section */
+#info {
+    width: 500px;
+    height: 300px;
+    margin: 10px auto;
+    border: 2px solid black;
+    padding: 15px;
+    /* background: white; */
+    border-radius: 10px;
+     background: rgba(255, 255, 255, 0.856);
+}
+
+/* Each line */
+#info h4 {
+    margin: 10px 0;
+}
+
+/* Mentees link */
+#info a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #4b0082;
+    font-weight: bold;
+}
+#info a:hover{
+    color: #7c48e5bd;
+}

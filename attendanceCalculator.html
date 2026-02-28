@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Attendance Calculator</title>
+
+<style>
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+}
+
+/* HEADER */
+header {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #4a148c;
+}
+
+/* MAIN CONTAINER */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+/* CARD */
+.card {
+    background: white;
+    width: 700px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* LEFT SIDE FORM */
+.form-section {
+    flex: 1;
+}
+
+.form-section h2 {
+    color: #8e24aa;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    color: #6a1b9a;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 15px 0;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ff69b4, #ba68c8);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* IMAGE SECTION */
+.image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 220px;
+    border-radius: 15px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px) {
+    .card {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .image-section img {
+        max-width: 150px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    Our Campus Portal
+</header>
+
+<div class="container">
+    <div class="card">
+
+        <div class="form-section">
+            <h2>Attendance Calculator</h2>
+
+            <label>Total Working Days</label>
+            <input type="number" id="total" placeholder="Enter total days">
+
+            <label>Number of Leaves Taken</label>
+            <input type="number" id="leave" placeholder="Enter leave count">
+
+            <button onclick="calculate()">Calculate</button>
+
+            <div class="result" id="output"></div>
+        </div>
+
+        <div class="image-section">
+            <!-- Replace with your campus image -->
+            <img src="attendance.png" alt="Attendance Image">
+        </div>
+
+    </div>
+</div>
+
+<script>
+function calculate() {
+
+    let total = parseInt(document.getElementById("total").value);
+    let leave = parseInt(document.getElementById("leave").value);
+
+    if (!total || leave > total) {
+        document.getElementById("output").innerHTML =
+            "Please enter valid numbers!";
+        return;
+    }
+
+    let attended = total - leave;
+    let attendance = (attended / total) * 100;
+    attendance = attendance.toFixed(2);
+
+    let resultText = "Attendance: " + attendance + "%<br>";
+
+    if (attendance >= 75) {
+        resultText += "<span style='color:green;'>Eligible ✅</span>";
+    } else {
+        resultText += "<span style='color:red;'>Not Eligible ❌</span>";
+    }
+
+    document.getElementById("output").innerHTML = resultText;
+}
+</script>
+
+</body>
+</html>
