@@ -1,1 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Leave System</title>
+   <link rel="stylesheet" href="login.css">
+</head>
+<body>
 
+<div class="main-wrapper">
+
+    <!-- LEFT SIDE: LOGIN FORM -->
+    <div class="form-section">
+        <h2>Login to Leave System</h2>
+
+        <form action="/auth/login" method="POST">
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <div class="role-selector">
+                <label>
+                    <input type="radio" name="role" value="student" checked> Student
+                </label>
+                <label>
+                    <input type="radio" name="role" value="teacher"> Teacher
+                </label>
+                <label>
+                    <input type="radio" name="role" value="hod"> HOD
+                </label>
+            </div>
+
+            <button type="submit">Login</button>
+        </form>
+
+        <p>Don't have an account? <a href="/register">Register here</a></p>
+    </div>
+
+    <!-- RIGHT SIDE: IMAGE -->
+    <div class="image-section">
+        <img src="login-img.jpeg" alt="Login Illustration">
+    </div>
+
+</div>
+
+</body>
+</html>

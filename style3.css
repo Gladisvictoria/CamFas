@@ -8,46 +8,34 @@
     box-sizing: border-box;
 }
 body {
-    /* margin: 0; */
+    margin: 0;
     font-family: 'Poppins', sans-serif;
     /* background: linear-gradient(-45deg, #f2a4f6, #dbbcec, #de8ede, #fda2ff); */
      background: linear-gradient(135deg, #d5abf7, #dbbcec, #de8ede);
             
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    
 
 }
 
-header{
- background-image: url("./cse-bg-img/headbg.jpeg"); /* your image file name */
-    background-size: cover;            /* makes image cover full header */
-    background-position: left;       /* keeps image centered */
-    background-repeat: no-repeat;      /* prevents repeating */
-                       /* give header height */
-   
 
-    text-align:center ;
+
+
     
-    font-size: 15px;
-    font-weight: bold;
-   
-    margin:0;
-    letter-spacing:1px;
-   
-    color: #330e43;
-    
-     position: fixed;
-     top: 0%;
-     width: 100%;
-     padding-bottom: 20px;
-     padding-top: 30px;
-     text-align:left;
-     padding-left: 30px;
+    header {
+            background: rgba(203, 103, 199, 0.7);
+            backdrop-filter: blur(10px);
+            padding: 37px;
+            text-align: center;
+            color: #330e43;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
      
 
-}
+
+
+
 .header-flex {
         display: flex;
         justify-content:center;
@@ -56,7 +44,7 @@ header{
 
 .container {
     background: rgba(255, 222, 254, 0.95);
-     /* background: rgba(255, 255, 255, 0.856); */
+    
     width: 85%;
     max-width: 900px;
     padding: 40px;
@@ -70,6 +58,8 @@ header{
     gap: 30px;
     justify-content: center;
     margin-bottom: 40px;
+     /* transform: translateY(-5px);
+   transition: 0.5s ease; */
 }
 
 .box {
@@ -80,6 +70,9 @@ header{
     flex: 1;
     text-align: center;
     box-shadow: 0 8px 20px rgba(95, 44, 130, 0.2);
+     transform: translateY(-5px);
+   transition: 0.5s ease;
+    
 }
 
 .box h2 {

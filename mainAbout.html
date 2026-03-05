@@ -17,38 +17,85 @@
         }
 
         body{
-            background: linear-gradient(135deg, #d5abf7, #dbbcec, #de8ede);
-            
+            /* background: linear-gradient(135deg, #d5abf7, #dbbcec, #de8ede); */
+             background: linear-gradient(135deg, #e6c7ff, #f3dcff, #ffd6ff);
   
 }
 
         
 
         /* Header */
-        .header{
-            /* color: black; */
-             color: #4B0082;
-             letter-spacing: 1px;
-             /* color: #3B0A75; */
-            text-align:center;
-            padding:25px;
-             background: rgba(203, 103, 199, 0.674);
-          
-           color: #330e43;
-            backdrop-filter: blur(10px);
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-        }
+      
 
-        .header h1{
-            font-size:30px;
-        }
+         header {
+        background: rgba(203, 103, 199, 0.674);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+        padding: 20px 0;
+        padding-bottom: 32px;
+    }
+
+    .header-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .logo-box img {
+        width: 55px;
+        height: 55px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        background: #ca93e2;;
+    }
+
+    .logo-text h1 {
+        font-size: 20px;
+        color: #330e43;
+    }
+
+    .logo-text span {
+        font-size: 12px;
+        /* color: #f1f1f1; */
+        color: #330e43;
+    }
+
+    /* NAV */
+    .nav-buttons {
+        display: flex;
+        gap: 18px;
+    }
+
+    .nav-btn {
+        text-decoration: none;
+        /* color: #fff; */
+        color: #330e43;
+        font-size: 14px;
+        padding: 6px 14px;
+        border-radius: 20px;
+        transition: 0.3s;
+    }
+
+    .nav-btn:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+
+
 
         /* Chairman Main Section */
         .chairman-section{
             max-width:1100px;
             margin:50px auto;
             padding:35px;
-            background: rgba(249, 214, 253, 0.84);
+             /* background: rgba(255, 255, 255, 0.6); */
+           background: #f8e6ff;
              /* background: rgba(255, 255, 255, 0.856); */
              display:flex;
             flex-wrap:wrap;
@@ -106,18 +153,14 @@
         .quote-card{
             max-width:1100px;
             margin:40px auto;
-        
-            background: rgba(249, 214, 253, 0.84);
+            background: #f8e6ff;
+            /* background: rgba(249, 214, 253, 0.84); */
             padding:35px;
             display:flex;
             align-items:center;
             gap:40px;
             box-shadow:0 6px 20px rgba(0,0,0,0.08);
-            /* background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); */
-            /* background: rgba(255, 255, 255, 0.25); */
+            
   backdrop-filter: blur(15px);
   border-radius: 20px;
   padding: 30px;
@@ -181,10 +224,7 @@
             text-align:center;
             padding:15px;
             font-size:14px;
-            /* background: rgba(255, 255, 255, 0.6);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1); */
+          
             background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(15px);
   border-radius: 20px;
@@ -214,14 +254,40 @@
 <body>
 
     <!-- Header -->
-    <div class="header">
+    <!-- <div class="header">
         <h1>About</h1>
-    </div>
+    </div> -->
+
+     <header>
+        <div class="container header-flex">
+
+            <!-- LOGO + NAME -->
+            <div class="logo-box">
+                <img src="pic1.png">
+                <div class="logo-text">
+                    <h1>SMTEC</h1>
+                    <span>St. Mother Theresa Engineering College</span>
+                </div>
+            </div>
+
+            
+
+            <!-- NAV -->
+            <nav class="nav-buttons">
+                <a href="#" class="nav-btn">Login</a>
+                <a href="#departments" class="nav-btn">Departments</a>
+                <a href="mainAbout.html" class="nav-btn">About Us</a>
+                <a href="#contact" class="nav-btn">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
 
     <!-- Chairman Section -->
     <div class="chairman-section">
         <div class="chairman-image">
-            <img src="founder-dr-cletus-babu.jpg" alt="Chairman Photo">
+            <img src="cse-bg-img/chairman photo.jpg" alt="Chairman Photo">
         </div>
 
         <div class="chairman-message">
@@ -252,7 +318,7 @@
 
     <!-- Director Section -->
     <div class="quote-card">
-        <img src="director.jpg" alt="Director Photo">
+        <img src="cse-bg-img/md-c-arun-babu.jpg" alt="Director Photo">
         <div class="quote-text">
             <p>
                 "If you want to be successful in society, develop the ability 
@@ -265,7 +331,7 @@
 
     <!-- Principal Section -->
     <div class="quote-card">
-        <img src="principal.jpg" alt="Principal Photo">
+        <img src="cse-bg-img/Dr_J_Jasper_Gnana_Chandran.webp" alt="Principal Photo">
         <div class="quote-text">
             <p>
                 "Education must shape success that is measured not in titles, 
