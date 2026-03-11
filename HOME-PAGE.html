@@ -7,7 +7,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    <title>SMTEC — St. Mother Theresa Engineering College</title>
+    <title>CSE- HOD</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
@@ -30,17 +30,21 @@
 
     /* BODY */
     body {
-        min-height: 100vh;
-           background: linear-gradient(135deg, #e6c7ff, #f3dcff, #ffd6ff);
-  
-        color: #2e2e2e;
-        /* color: #c6a75e; */
+          margin: 0;
+            /* padding: 0%; */
+            min-height: 100vh;
+            background: linear-gradient(135deg, #e6c7ff, #f3dcff, #ffd6ff);
+            display: flex;
+            flex-direction: column;
+
+
+       
     }
 
     /* CONTAINER */
     .container {
         width: 100%;
-        max-width: 1100px;
+        max-width: 1200px;
         margin: auto;
     }
 
@@ -288,15 +292,17 @@
     }
 
     @media (max-width: 768px) {
-
-    .header-flex {
+ .header-flex{
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
     }
 
-    .nav-buttons {
+    .nav-buttons{
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
     }
 
     .vm-box {

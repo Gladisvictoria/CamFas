@@ -8,19 +8,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
     <style>
-        body {
+
+         * {
             margin: 0;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-           background-color: #efb6e6a1;
-             
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Poppins", sans-serif;
         }
 
+        body {
+            margin: 0;
+            /* padding: 20px; */
+            font-family: Arial, sans-serif;
+             background-color: #efb6e6a1;
+        }
+           .container{
+    width:100%;
+    max-width:1100px;
+    margin:auto;
+}
         header {
         background: rgba(203, 103, 199, 0.674);
         backdrop-filter: blur(12px);
         border-bottom: 1px solid rgba(255, 255, 255, 0.25);
         padding: 14px 0;
+        margin-bottom: 20px;
         
     }
 
@@ -50,7 +62,7 @@
         color: #330e43;
     }
 
-    .logo-text span {
+    .logo-text p {
         font-size: 12px;
         /* color: #f1f1f1; */
         color: #330e43;
@@ -117,16 +129,30 @@
 
            @media (max-width: 768px) {
 
+
+
     .header-flex {
+
+        
         flex-direction: column;
-        gap: 15px;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
     }
 
-    .nav-buttons {
+    .nav-buttons{
         flex-wrap: wrap;
         justify-content: center;
+        gap: 10px;
     }
-           }
+
+
+        /* flex-direction: column;
+        gap: 15px; */
+    }
+
+    
+           
     </style>
 </head>
 <body>
